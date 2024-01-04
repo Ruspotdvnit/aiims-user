@@ -46,11 +46,11 @@
     </div>
     <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 First Phase
             </button>
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div>
                     <x-input-text-group name="Complete Blood Count" />
@@ -144,19 +144,51 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div>
+                    <div class="form-group mb-3">
+                        <label class="col-form-label" for="exampleFormControlTextarea1">CT Scan</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="col-form-label" for="exampleFormControlTextarea1">USG-KUB & ABDOMEN</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label" for="exampleFormControlTextarea1">ECG</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" collapseThree aria-controls="collapseFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" collapseThree aria-controls="collapseFour">
                 Third Phase
             </button>
         </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">T & B LYMPHOCYTE CDC CROSS MATCH</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">CMV IGg</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">HLA DNA NEXT GENERATION SEQUENCING</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">IGM</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

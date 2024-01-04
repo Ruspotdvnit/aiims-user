@@ -142,9 +142,5 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <x-layouts.footer />
 </main>
 @endsection
