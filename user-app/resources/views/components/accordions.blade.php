@@ -1,11 +1,11 @@
 <div class="accordion" id="accordionExample">
     <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 Initial Phase
             </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <!-- -->
                 <div class="row g-3">
@@ -30,15 +30,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-3">
+                <div class="row g-3 mt-1">
                     <div class="col-4">
-                        <label for="co-morbidity" class="col-form-label">Co-Morbidity</label>
-                        <div class="card border-light">
-                            <div class="card-body bg-body-secondary">
-                                <x-inline-form-check />
-                                <x-inline-form-check />
-                                <x-inline-form-check />
-                            </div>
+                        <x-input-check-group name="Co-Morbidity" />
+                    </div>
+                    <div class="ms-5 col-4 pe-0">
+                        <div class="form-group">
+                            <label class="col-form-label" for="exampleFormControlTextarea1">Any Medication / Surgery History</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                         </div>
                     </div>
                 </div>
@@ -47,13 +46,93 @@
     </div>
     <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 First Phase
             </button>
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div>
+                    <x-input-text-group name="Complete Blood Count" />
+                </div>
+                <div>
+                    <x-input-text-group name="KFT" />
+                </div>
+                <div>
+                    <x-input-text-group name="LFT" />
+                </div>
+                <div>
+                    <x-input-text-group name="LIPID profile" />
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-4">
+                        <x-input-check-group name="Viral Markers" />
+                    </div>
+
+                    <div class="col-6">
+                        <label for="co-morbidity" class="col-form-label">PT</label>
+                        <div class="card border-light">
+                            <div class="card-body bg-body-secondary">
+                                <div class="">
+                                    <div class="">
+                                        <x-value-input label="Prothrombin Time PT" xid="prothrombin_time_pt" />
+                                    </div>
+                                    <div class="mt-1">
+                                        <x-value-input label="MNPT Value" xid="mnpt_value" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-4">
+                        <x-value-input label="Nephrology" xid="Nephrology" />
+                    </div>
+                    <div class="col-4">
+                        <x-value-input label="Nephrology" xid="Nephrology" />
+                    </div>
+                    <div class="col-4">
+                        <x-value-input label="Nephrology" xid="Nephrology" />
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-4">
+                        <x-value-input label="Nephrology" xid="Nephrology" />
+                    </div>
+                    <div class="col-4">
+                        <x-value-input label="Nephrology" xid="Nephrology" />
+                    </div>
+                    <div class="col-4">
+                        <x-value-input label="Nephrology" xid="Nephrology" />
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-4">
+                        <x-value-input label="Nephrology" xid="Nephrology" />
+                    </div>
+                    <div class="col-4">
+                        <x-value-input label="Nephrology" xid="Nephrology" />
+                    </div>
+                </div>
+
+                <div>
+                    <div class="form-group mb-3">
+                        <label class="col-form-label" for="exampleFormControlTextarea1">Urine Culture</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="col-form-label" for="exampleFormControlTextarea1">Nephrology</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label" for="exampleFormControlTextarea1">Urology</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
