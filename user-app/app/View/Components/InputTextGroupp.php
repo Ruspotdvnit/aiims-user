@@ -6,14 +6,15 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class value-input extends Component
+class InputTextGroupp extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public $data;
+    public function __construct($cbcData)
     {
-        //
+        $this->data = $cbcData;
     }
 
     /**
@@ -21,6 +22,6 @@ class value-input extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.value-input');
+        return view('components.input-text-groupp')->with('data', $this->data);
     }
 }

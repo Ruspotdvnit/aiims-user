@@ -6,14 +6,17 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class inline-form-check extends Component
+class InputCheckGroupp extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public $vals;
+    public $options;
+    public function __construct($vals, $options)
     {
-        //
+        $this->vals = $vals;
+        $this->options = $options;
     }
 
     /**
@@ -21,6 +24,6 @@ class inline-form-check extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.inline-form-check');
+        return view('components.input-check-groupp')->with('data', $this->vals)->with('options', $this->options);
     }
 }

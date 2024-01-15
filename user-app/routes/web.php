@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,6 @@ Route::get('/forms', [App\Http\Controllers\FormsController::class, 'index'])->na
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/forms/live-donor', [App\Http\Controllers\FormsController::class, 'liveDonor'])->name('live-donor');
+
+Route::get('/forms/live-donor-demo', [App\Http\Controllers\FormsController::class, 'liveDonorDemo'])->name('live-donor-demo');
+

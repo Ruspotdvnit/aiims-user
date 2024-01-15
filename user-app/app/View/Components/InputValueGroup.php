@@ -6,14 +6,15 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class input-check-group extends Component
+class InputValueGroup extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public $data;
+    public function __construct($ptData)
     {
-        //
+        $this->data = $ptData;
     }
 
     /**
@@ -21,6 +22,6 @@ class input-check-group extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.input-check-group');
+        return view('components.input-value-group')->with('data', $this->data);
     }
 }

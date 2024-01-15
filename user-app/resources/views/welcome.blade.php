@@ -32,9 +32,9 @@
         </svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
+            <h1>Only form url is working</h1>
             <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">View on PC</a></p>
           </div>
         </div>
       </div>
@@ -44,9 +44,9 @@
         </svg>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
+            <h1>Only form url is working</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">View on PC</a></p>
           </div>
         </div>
       </div>
@@ -56,9 +56,9 @@
         </svg>
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
+            <h1>Only form url is working</h1>
             <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">View on PC</a></p>
           </div>
         </div>
       </div>
@@ -111,8 +111,8 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">What is Lorem Ipsum?<span class="text-body-secondary">Lorem Ipsum is simply dummy text of the</span></h2>
-        <p class="lead">e the 1500s, when an unknown printer took a galley of type and scrambled it to make a</p>
+        <h2 class="featurette-heading fw-normal lh-1">Only form url is working<span class="text-body-secondary"> </span></h2>
+        <p class="lead">Lorem Ipsum is simply dummy text of thee the 1500s, when an unknown printer took a galley of type and scrambled it to make a</p>
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -126,7 +126,7 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Why do we use it? <span class="text-body-secondary">t is a long established fact that a reader </span></h2>
+        <h2 class="featurette-heading fw-normal lh-1">Only Form URL is working <span class="text-body-secondary"> </span></h2>
         <p class="lead">ontent of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-le</p>
       </div>
       <div class="col-md-5 order-md-1">

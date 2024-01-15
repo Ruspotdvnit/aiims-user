@@ -1,19 +1,18 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\New;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class input-text-group extends Component
+class SingleInputText extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(public string $type)
     {
-        //
     }
 
     /**
@@ -21,6 +20,6 @@ class input-text-group extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.input-text-group');
+        return view('components.new.single-input-text');
     }
 }
