@@ -4,7 +4,8 @@
         <div class="">
             @foreach($data as $title)
             <div class="mt-1">
-                <x-value-inputt label="{{ $title }}" xid="{{ strtolower($title) }}" />
+                <x-value-inputt label="{{ $title }}" 
+                    xid="{{ $sub.'_'.strtolower(str_replace([' ', '(', ')', '/', ',','-','%'], '_', $title)) }}" />
             </div>
             @endforeach
         </div>

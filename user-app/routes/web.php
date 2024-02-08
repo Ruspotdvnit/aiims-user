@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-}); //->middleware('auth');
+});
 
 Auth::routes();
 
@@ -24,7 +24,14 @@ Route::get('/forms', [App\Http\Controllers\FormsController::class, 'index'])->na
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/forms/live-donor', [App\Http\Controllers\FormsController::class, 'liveDonor'])->name('live-donor');
+Route::get('/forms/live-routine', [App\Http\Controllers\FormsController::class, 'liveDonorRoutine'])->name('live-routine');
 
 Route::get('/forms/live-donor-demo', [App\Http\Controllers\FormsController::class, 'liveDonorDemo'])->name('live-donor-demo');
 
+Route::get('/forms/live-recp-demo', [App\Http\Controllers\FormsController::class, 'liveRecpDemo'])->name('live-recp-demo');
+
+Route::post('/submit/live-donor-demo-receive', [App\Http\Controllers\FormsController::class, 'liveDonorDemoReceive'])->name('live-donor-demo-receive');
+
+Route::post('/submit/live-recp-demo-receive', [App\Http\Controllers\FormsController::class, 'liveRecpDemoReceive'])->name('live-recp-demo-receive');
+
+Route::post('/submit/live-routine-receive', [App\Http\Controllers\FormsController::class, 'liveReceive'])->name('live-routine-receive');

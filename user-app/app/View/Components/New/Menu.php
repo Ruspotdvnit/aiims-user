@@ -12,7 +12,7 @@ class Menu extends Component
      * Create a new component instance.
      */
     public $data;
-    public function __construct($data)
+    public function __construct($data, public string $sub)
     {
         $this->data = $data;
     }

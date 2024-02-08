@@ -12,7 +12,7 @@ class InputValueGroup extends Component
      * Create a new component instance.
      */
     public $data;
-    public function __construct($ptData)
+    public function __construct($ptData, public string $sub)
     {
         $this->data = $ptData;
     }

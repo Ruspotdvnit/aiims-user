@@ -12,7 +12,7 @@ class InputTextGroupp extends Component
      * Create a new component instance.
      */
     public $data;
-    public function __construct($cbcData)
+    public function __construct($cbcData, public string $sub)
     {
         $this->data = $cbcData;
     }

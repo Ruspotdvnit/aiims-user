@@ -11,7 +11,7 @@ class SingleInputText extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $type)
+    public function __construct(public string $type, public string $sub)
     {
     }
 
